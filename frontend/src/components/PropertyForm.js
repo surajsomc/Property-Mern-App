@@ -24,12 +24,12 @@ const PropertyForm = () => {
 
         const property = { name, address, city, state, zip }
 
-        const res = await fetch('/api/properties', {
+        const res = await fetch('https://real-estate-app-o33o.onrender.com/api/properties', {
             method: 'POST',
             body: JSON.stringify(property),
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${user.token}`
+                'Authorization': `Bearer ${user.token}`,
             },
             
         })
@@ -56,7 +56,7 @@ const PropertyForm = () => {
     return(
         <form className="create" onSubmit={handleSubmit}>
             <h3>Add a New Property</h3>
-            <label>Property Name:</label>
+            <label>Property Name: </label>
             <input 
                 type="text"
                 onChange={(e) => setName(e.target.value)}

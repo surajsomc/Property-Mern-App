@@ -19,7 +19,8 @@ const PropertyDetails = ({ property }) => {
         const response = await fetch(`/api/properties/`+property._id, {
             method: 'DELETE',
             headers: {
-                'Authorization': `Bearer ${user.token}`
+                'Authorization': `Bearer ${user.token}`,
+                'Access-Control-Allow-Origin': '*'
             }
         });
         const json = await response.json();
