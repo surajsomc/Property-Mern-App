@@ -30,6 +30,7 @@ const PropertyForm = () => {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${user.token}`,
+                'Access-Control-Allow-Origin': '*'
             },
             
         })
