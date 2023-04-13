@@ -9,25 +9,25 @@ const {
 const requireAuth = require('../middleware/requireAuth')
 
 
-const router = express.Router();
+const router_2 = express.router_2();
 
 //require auth for all properties routes
-router.use(requireAuth)
+router_2.use(requireAuth)
 
 //GET all properties
-router.get('/', getAllProperties)
+router_2.get('/', getAllProperties)
 
 //GET a single properties
-router.get('/:id', getSingleProperty)
+router_2.get('/:id', getSingleProperty)
 
 //POST a properties
-router.post('/', createProperty)
+router_2.post('/', createProperty)
 
 //Delete a properties
-router.delete('/:id', deleteProperty)
+router_2.delete('/:id', deleteProperty)
 
 //Update a properties
-router.patch('/:id', updateProperty)
+router_2.patch('/:id', updateProperty)
 
 
-module.exports = router;
+module.exports = router_2;
