@@ -11,22 +11,22 @@ const requireAuth = require('../middleware/requireAuth')
 
 const router = express.Router();
 
-//require auth for all workout routes
+//require auth for all properties routes
 router.use(requireAuth)
 
-//GET all workouts
+//GET all properties
 router.get('/', getAllProperties)
 
-//GET a single workout
+//GET a single properties
 router.get('/:id', getSingleProperty)
 
-//POST a workout
+//POST a properties
 router.post('/', createProperty)
 
-//Delete a workout
+//Delete a properties
 router.delete('/:id', deleteProperty)
 
-//Update a workout
+//Update a properties
 router.patch('/:id', updateProperty)
 
 

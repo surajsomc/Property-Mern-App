@@ -19,8 +19,7 @@ const PropertyDetails = ({ property }) => {
         const response = await fetch(`https://real-estate-app-o33o.onrender.com/api/properties/`+property._id, {
             method: 'DELETE',
             headers: {
-                'Authorization': `Bearer ${user.token}`,
-                'Access-Control-Allow-Origin': '*'
+                'Authorization': `Bearer ${user.token}`
             }
         });
         const json = await response.json();

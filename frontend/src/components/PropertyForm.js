@@ -29,8 +29,7 @@ const PropertyForm = () => {
             body: JSON.stringify(property),
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${user.token}`,
-                'Access-Control-Allow-Origin': '*'
+                'Authorization': `Bearer ${user.token}`
             },
             
         })
