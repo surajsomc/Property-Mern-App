@@ -16,7 +16,7 @@ const PropertyDetails = ({ property }) => {
         }
 
 
-        const response = await fetch(`/api/properties/`+property._id, {
+        const response = await fetch(`https://real-estate-app-o33o.onrender.com/api/properties/`+property._id, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.token}`,
