@@ -9,7 +9,7 @@ const {
 const requireAuth = require('../middleware/requireAuth')
 
 
-const router_2 = express.router_2();
+const router_2 = express.router();
 
 //require auth for all properties routes
 router_2.use(requireAuth)
