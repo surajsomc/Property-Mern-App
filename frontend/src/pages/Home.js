@@ -13,7 +13,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchProperties = async () => {
-            const response = await fetch('/api/properties', {
+            const response = await fetch('https://real-estate-app-o33o.onrender.com/api/properties', {
                 headers: {'Authorization': `Bearer ${user.token}`},
             })
             const json = await response.json();
